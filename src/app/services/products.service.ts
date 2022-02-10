@@ -9,7 +9,7 @@ export class ProductsService {
 
   constructor(private http: HttpClient) { }
 
-  getProducts(filename:string){
+  getProducts(filename:string):any{
     return this.http.get(`/assets/mock/${filename}.json`)
   }
 }

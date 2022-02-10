@@ -1,1 +1,5 @@
-<p>products works!</p>
+<div class="products-container">
+    <div *ngIf="products" class="product-section">
+        <img *ngFor="let item of products" src="{{item.image}}" alt="image">
+    </div>
+</div>

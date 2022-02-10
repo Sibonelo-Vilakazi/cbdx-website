@@ -9,11 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class ProductsComponent implements OnInit {
 
   constructor(private productsService:ProductsService) { }
-
+  products :any =[]
   ngOnInit(): void {
     this.productsService.getProducts('products').subscribe((data :any )=>{
       console.log(data)
+      this.products= data;
     })
+   
   }
 
 }

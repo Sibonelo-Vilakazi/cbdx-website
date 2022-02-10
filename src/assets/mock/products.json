@@ -1,41 +1,41 @@
 [
     {
-        "image":"/src/assets/image/cbd_body_oil.jpeg",
+        "image":"../../../assets/image/cbd_body_oil.jpeg",
         "name":"CBD Body Oil",
         "category": "Wake Sleep",
         "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...",
         "price": 24.00
     },
     {
-        "image":"/src/assets/image/cbd_massage_oil.jpeg",
+        "image":"../../../assets/image/cbd_massage_oil.jpeg",
         "name":"CBD Massage Oil",
         "category": "Wake Sleep",
         "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...",
         "price": 28.00
     },
     {
-        "image":"/src/assets/image/cbd_oil_tenture.jpeg",
+        "image":"../../../assets/image/cbd_oil_tenture.jpeg",
         "name":"CBD Oil Tenture",
         "category": "Wake",
         "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...",
         "price": 29.99
     },
     {
-        "image":"/src/assets/image/cbd_oil_vanilla_tinture.jpeg",
+        "image":"../../../assets/image/cbd_oil_vanilla_tinture.jpeg",
         "name":"CBD Oil Vanilla Tinture",
         "category": "Wake",
         "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...",
         "price": 35.00
     },
     {
-        "image":"/src/assets/image/cbd_skin_care.jpeg",
+        "image":"../../../assets/image/cbd_skin_care.jpeg",
         "name":"CBD Skin Care",
         "category":"Sleep",
         "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...",
         "price": 12.00
     },
     {
-        "image":"/src/assets/image/cdb_tea_pounch.jpeg",
+        "image":"../../../assets/image/cdb_tea_pounch.jpeg",
         "name":"CBD Tea Pounch",
         "category": "Focus",
         "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...",

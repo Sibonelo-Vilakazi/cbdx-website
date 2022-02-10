@@ -1,0 +1,8 @@
+.product-section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    img{
+        width :calc(95%/3);
+    }
+}
