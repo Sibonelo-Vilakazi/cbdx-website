@@ -1,0 +1,12 @@
+
+<div class="product-container">
+    <div class="product-header-section">
+        <p class="title"> {{headerText}} Products</p>
+        <p class="product-description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+        <div class="category-section">
+            <app-category-tab *ngFor="let tab of tabs; let i =index" (tabAction)="handleTabClick($event, i)" [tab]="tab"></app-category-tab>
+            
+
+        </div>
+    </div>
+</div>
