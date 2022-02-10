@@ -1,8 +1,58 @@
+@import '/src/themes/themes.scss';
 .product-section{
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: center;
     flex-wrap: wrap;
-    img{
-        width :calc(95%/3);
+    gap: 26px;
+    margin-top: 48px;
+    .product{
+        width : calc(calc(100%/3) - (23px *2));
+        
+        img{
+            width: 100%;
+            height: 363px;
+        }
+        .card-content{
+            margin-top:32px;
+            .productName{
+                font-size: $tertiary-font-size;
+                color: $blackish-color;
+            }
+            .productDescription{
+                font-size: $secondary-font-size;
+                color: $greyish-color;
+            }
+
+            .productPrice{
+                font-size: $tertiary-font-size;
+                color: $primary-color;
+                font-weight: 600;
+            }
+        }
     }
+
+   
+    
+}
+
+.product-header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width :50% !important;
+    text-align: center;
+    margin: auto;
+}
+
+.title{
+    font-size: $header-font-size;
+    margin: $zero-padding;
+}
+.category-section{
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    justify-content: center;
+    column-gap: $secondary-padding;
 }

@@ -10,6 +10,9 @@ export class ProductsComponent implements OnInit {
 
   constructor(private productsService:ProductsService) { }
   products :any =[]
+  category : any ={
+    name:  'Wake'
+   }
   ngOnInit(): void {
     this.productsService.getProducts('products').subscribe((data :any )=>{
       console.log(data)
