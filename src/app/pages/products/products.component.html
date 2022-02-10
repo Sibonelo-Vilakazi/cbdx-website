@@ -9,4 +9,9 @@
 
         </div>
     </div>
+
+    <div class="products-section">
+        <app-product-card *ngFor="let item of products" [product]="item"></app-product-card>
+        
+    </div>
 </div>

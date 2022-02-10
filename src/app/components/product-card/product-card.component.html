@@ -1,1 +1,8 @@
-<p>product-card works!</p>
+<div class="product-card">
+    <img src="{{product.image}}" alt="{{product.name}}">
+    <div class="card-content">
+        <p class="productName">{{product.name}}</p>
+        <p class="productDescription">{{product.description}}</p>
+        <p class="productPrice">$ {{ product.price| number:'1.2-2' }} USD</p>
+    </div>
+</div>

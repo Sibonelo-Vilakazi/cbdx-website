@@ -1,0 +1,26 @@
+@import '/src/themes/themes.scss';
+
+
+.product-card{
+    img{
+       width: 100%;
+       height: 363px; 
+    }
+    
+    .card-content{
+        margin-top: 32px;
+        .productName{
+            font-size: $font-size22;
+            color:$blackish-color;
+        }
+        .productDescription{
+            font-size: $font-size18;
+            color: $greyish-color;
+        }
+        .productPrice{
+            font-size: $font-size22;
+            color: $primary-color;
+            font-weight: 600;
+        }
+    }
+}

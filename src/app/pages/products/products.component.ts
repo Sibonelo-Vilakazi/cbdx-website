@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+
+import { ProductsService } from 'src/app/services/products.service';
 
 @Component({
   selector: 'app-products',
@@ -8,7 +9,7 @@ import { FormBuilder } from '@angular/forms';
 })
 export class ProductsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private productService :ProductsService) { }
   headerText: string =''
   tabs : any =[{
     id :1,
@@ -27,7 +28,18 @@ export class ProductsComponent implements OnInit {
   },
   
 ]
+  products : any = []
+  tempProducts : any =[]
   ngOnInit(): void {
+
+    this.productService.getProducts('products').subscribe((data :any)=> {
+      console.log(data)
+      this.products = data;
+      this.tempProducts =[...data];
+
+    }, (err: any) =>{
+      console.log(err)
+    })
   }
 
   handleTabClick($event : any,index :number){
@@ -37,6 +49,8 @@ export class ProductsComponent implements OnInit {
     }
     this.tabs[index].active =true;
     this.headerText = $event.name
+
+    this.products = this.tempProducts.filter( (product:any ) => product.category.toLowerCase().includes($event.name.toLowerCase()))
     
   }
 
