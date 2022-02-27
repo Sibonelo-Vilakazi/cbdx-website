@@ -8,6 +8,7 @@ import { CategoryTabComponent } from './components/category-tab/category-tab.com
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductViewComponent } from './pages/product-view/product-view.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
     CategoryTabComponent,
     ProductCardComponent,
     ProductsComponent,
+    ProductViewComponent,
   
   ],
   imports: [

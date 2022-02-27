@@ -35,7 +35,6 @@ export class ProductsComponent implements OnInit {
     this.productService.getProducts('products').subscribe((data :any)=> {
       console.log(data)
       this.products = data;
-      console.log(this.products)
       this.tempProducts =[...data];
 
     }, (err: any) =>{
